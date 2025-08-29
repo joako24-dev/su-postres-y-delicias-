@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su Postres y Delicias - Pastelería Artesanal</title>
+    <!-- Verifica que el archivo styles.css esté en la misma carpeta -->
+    <link rel="stylesheet" href="aña.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Su Postres y Delicias</div>
+                <nav>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#tortas">Tortas</a>
+                    <a href="#postres">Postres</a>
+                    <a href="#galletas">Galletas</a>
+                    <a href="#panaderia">Panadería</a>
+                </nav>
+                <button class="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Arte en Cada Bocado</h1>
+                <p>Descubre nuestra exquisita selección de pastelería artesanal</p>
+            </div>
+        </div>
+        <div class="wave"></div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2>Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <!-- Tortas -->
+                <a href="#tortas" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 极.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2极2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3>Tortas</h3>
+                    <p>Deliciosas creaciones para ocasiones especiales</p>
+                </a>
+
+                <!-- Postres -->
+                <a href="#postres" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3>Postres</h3>
+                    <p>Pequeñas delicias para endulzar tu día</p>
+                </a>
+
+                <!-- Galletas -->
+                <a href="#galletas" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3>Galletas</h3>
+                    <p>Crujientes y deliciosas para cualquier momento</p>
+                </a>
+
+                <!-- Panadería -->
+                <a href="#panaderia" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM6.75 9.25a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-6.5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3>Panadería</h3>
+                    <p>Pan fresco y productos horneados artesanales</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Tortas -->
+    <section id="tortas" class="products-section">
+        <div class="container">
+            <h2>Nuestras Tortas</h2>
+            <div class="products-grid">
+                <!-- Torta 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9550c883-8b6f-4f16-9789-546e3447dce1.png" alt="Torta de chocolate triple con ganache y decoraciones de frutos rojos sobre base de mármol">
+                    </div>
+                    <div class="product-info">
+                        <h3>Torta Triple Chocolate</h3>
+                        <p>Deliciosa torta de chocolate con tres capas y ganache</p>
+                        <div class="product-footer">
+                            <span class="price">$45.000</span>
+                            <button class="details-button" onclick="openModal(0)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Torta 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/daf0e79a-8e4c-428f-9b1e-cb1c9222d001.png" alt="Torta de red velvet con frosting de queso crema y decoración elegante en rojo y blanco">
+                    </div>
+                    <div class="product-info">
+                        <h3>Red Velvet Clásica</h3>
+                        <p>Torta suave con frosting de queso crema y vainilla</p>
+                        <div class="product-footer">
+                            <span class="price">$38.000</span>
+                            <button class="details-button" onclick="openModal(1)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Torta 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/549d9485-71d2-4fef-b6c1-d9d68791c0c6.png" alt="Torta de frutas tropicales con crema chantilly y decoración de mango, piña y maracuyá">
+                    </div>
+                    <div class="product-info">
+                        <h3>Torta Tropical</h3>
+                        <p>Fresca combinación de frutas tropicales y crema</p>
+                        <div class="product-footer">
+                            <span class="price">$42.000</span>
+                            <button class="details-button" onclick="openModal(2)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Postres -->
+    <section id="postres" class="products-section">
+        <div class="container">
+            <h2>Deliciosos Postres</h2>
+            <div class="products-grid">
+                <!-- Postre 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://laroussecocina.mx/wp-content/uploads/2020/11/Tiramisu.jpg" alt="Tiramisú italiano en copa de vidrio con capas de café, mascarpone y cacao en polvo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tiramisú Clásico</h3>
+                        <p>Postre italiano con café, mascarpone y cacao</p>
+                        <div class="product-footer">
+                            <span class="price">$12.000</span>
+                            <button class="details-button" onclick="openModal(3)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6993acc1-3499-478b-803b-72046c8b385c.png" alt="Cheesecake de frutos rojos con base de galleta y topping de frambuesas y arándanos frescos">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cheesecake de Frutos Rojos</h3>
+                        <p>Suave cheesecake con salsa de frutos del bosque</p>
+                        <div class="product-footer">
+                            <span class="price">$15.000</span>
+                            <button class="details-button" onclick="openModal(4)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Postre 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d7ccddb-acfd-48a5-b445-32912d933c30.png" alt="Profiteroles rellenos de crema pastelera y bañados en chocolate derretido con nueces">
+                    </div>
+                    <div class="product-info">
+                        <h3>Profiteroles de Chocolate</h3>
+                        <p>Bolitas de hojaldre rellenas de crema y chocolate</p>
+                        <div class="product-footer">
+                            <span class="price">$10.000</span>
+                            <button class="details-button" onclick="openModal(5)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-price" id="modalPrice"></p>
+            <p class="modal-description" id="modalDescription"></p>
+            
+            <div class="ingredients">
+                <h4>Ingredientes Principales:</h4>
+                <p id="modalIngredients"></p>
+            </div>
+            
+            <p><strong>Tiempo de elaboración:</strong> <span id="modalTime"></span></p>
+            <p><strong>Porciones:</strong> <span id="modalServings"></span></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Su potres y delicias</h3>
+                    <p>Creando momentos dulces e inolvidables</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>1168125893</p>
+                    <p>supostresydelicias@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/1168125893?text=Hola%2C%20quiero%20más%20información" target="_blank">WhatsApp</a>
+                        <a href="https://www.instagram.com/su_postres.y.delicias/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Su postres y delicias. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Efecto de scroll suave para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación de elementos al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animación
+        document.querySelectorAll('.product-card, .category-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Menú móvil
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const nav = document.querySelector('nav');
+        
+        mobileMenu.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
