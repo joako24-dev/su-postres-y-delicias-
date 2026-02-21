@@ -53,6 +53,33 @@ const products = [
         time: "3 horas",
         servings: "6 unidades",
         image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8d7ccddb-acfd-48a5-b445-32912d933c30.png"
+    },
+    {
+        title: "Facturas mixtas",
+        price: "$15.000 (12 unidades)",
+        description: "facturas tradicionales argentinas como vigilantes, cañon de dulce de leche, tortitas negras y medialunas ",
+        ingredients: "harina de trigo, huevos, manteca, membrillo, crema pastelera, dulce de leche",
+        time: "3 horas",
+        servings: "12 unidades",
+        image: "https://vinomanos.com/wp-content/uploads/2020/04/Facturas-de-panaderia-copia.jpg"
+    },
+    {
+        title: "pan casero",
+        price: "$10.000 (2 unidades)",
+        description: "pan casero esponjoso y crujiente",
+        ingredients: "harina de trigo, grasa vacuna, sal y agua ",
+        time: "2 horas",
+        servings: "2 unidades",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsdAjPio_R8mr9e6AYiNSFe3_1roJLb913Q&s"
+    },
+    {
+        title: "rosca de pascuas ",
+        price: "$20.000 (1 unidades)",
+        description: "rosca tradicional de pascuas",
+        ingredients: "harina de trigo, huevos, manteca, crema pastelera, chocolate, cerezas",
+        time: "2 horas",
+        servings: "1 unidades",
+        image: "https://www.integralisimo.com/wp-content/uploads/sites/5/2020/04/Rosca-de-Pascua-Integral-10.jpg"
     }
 ];
 

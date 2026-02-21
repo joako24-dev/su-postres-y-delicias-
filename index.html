@@ -7,6 +7,7 @@
     <!-- Verifica que el archivo styles.css esté en la misma carpeta -->
     <link rel="stylesheet" href="aña.css">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header y Navegación -->
@@ -18,7 +19,6 @@
                     <a href="#inicio">Inicio</a>
                     <a href="#tortas">Tortas</a>
                     <a href="#postres">Postres</a>
-                    <a href="#galletas">Galletas</a>
                     <a href="#panaderia">Panadería</a>
                 </nav>
                 <button class="mobile-menu">
@@ -199,6 +199,59 @@
         </div>
     </section>
 
+    <!-- Sección de panaderia -->
+    <section id="panaderia" class="products-section">
+        <div class="container">
+            <h2>Panaderia Recien Horneada</h2>
+            <div class="products-grid">
+                <!-- panaderia 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://vinomanos.com/wp-content/uploads/2020/04/Facturas-de-panaderia-copia.jpg" alt="facturas mixtas artesanales">
+                    </div>
+                    <div class="product-info">
+                        <h3>docena de facturas</h3>
+                        <p>facturas mixtas eartesanales</p>
+                        <div class="product-footer">
+                            <span class="price">$15.000</span>
+                            <button class="details-button" onclick="openModal(6)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- panaderia 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROsdAjPio_R8mr9e6AYiNSFe3_1roJLb913Q&s" alt="pancasero">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pan caserp</h3>
+                        <p>Esponjoco y crocante pan casero</p>
+                        <div class="product-footer">
+                            <span class="price">$10.000</span>
+                            <button class="details-button" onclick="openModal(7)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- panaderia 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.integralisimo.com/wp-content/uploads/sites/5/2020/04/Rosca-de-Pascua-Integral-10.jpg" alt="rosca de pascuas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Rosca de Pascuas</h3>
+                        <p>rosca de pascuas cubierta de crema pastelera cerezas y chocolate</p>
+                        <div class="product-footer">
+                            <span class="price">$20.000</span>
+                            <button class="details-button" onclick="openModal(8)">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Modal -->
     <div class="modal" id="productModal">
         <div class="modal-content">
@@ -234,8 +287,8 @@
                 <div class="footer-section">
                     <h3>Síguenos</h3>
                     <div class="social-links">
-                        <a href="https://wa.me/541168125893?text=Hola%2C%20quiero%20más%20información" target="_blank">WhatsApp</a>
-                        <a href="https://www.instagram.com/su_postres.y.delicias/" target="_blank">Instagram</a>
+                        <a href="https://wa.me/541168125893?text=Hola%2C%20quiero%20más%20información" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i> WathsApp</a>
+                        <a href="https://www.instagram.com/su_postres.y.delicias/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
                     </div>
                 </div>
             </div>
@@ -289,5 +342,3 @@
     </script>
 </body>
 </html>
-
-
