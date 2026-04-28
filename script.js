@@ -119,3 +119,73 @@ document.addEventListener('keydown', function(event) {
         closeModal();
     }
 });
+
+// Scroll progress bar
+const scrollProgressEl = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgressEl.style.width = ((window.scrollY / total) * 100) + '%';
+});
+
+// Navbar scroll state
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+}, { passive: true });
+
+// Reveal animations on scroll
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+});
+
+document.querySelectorAll('.product-card').forEach((el, i) => {
+    el.classList.add('reveal');
+    if (i % 3 === 1) el.classList.add('reveal-d1');
+    if (i % 3 === 2) el.classList.add('reveal-d2');
+    revealObserver.observe(el);
+});
+
+document.querySelectorAll('.contact-card').forEach((el, i) => {
+    el.classList.add('reveal');
+    if (i === 1) el.classList.add('reveal-d1');
+    if (i === 2) el.classList.add('reveal-d2');
+    revealObserver.observe(el);
+});
+
+document.querySelectorAll('.about-container').forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+});
+
+// Active category highlight on scroll
+const catLinks = document.querySelectorAll('.cat-item');
+const catSectionIds = ['tortas', 'postres', 'panaderia'];
+
+const catObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const id = entry.target.id;
+            catLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${id}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+}, { threshold: 0.35 });
+
+catSectionIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) catObserver.observe(el);
+});
